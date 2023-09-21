@@ -1,21 +1,83 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from 'astro:assets';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Messisipi">
+  <h1 class="text-8xl justify-center flex underline font-mono">messiupload</h1>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="dropzone">
+    <div class="flex items-center justify-center w-full">
+      <label
+      for="dropzone-file"
+      class="flex flex-col items-center justify-center w-full h-80 border-gray-300 cursor-pointer bg-white dark:hover:bg-slate-50"
+      >
+      <div class="flex flex-col items-center justify-center pt-7 pb-6">
+          <h1 class="text-3xl text-black justify-center flex absolute inset-x-0 top-4">Upload videos here!</h1>
+          <br>
+          <svg
+            class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 16"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+            ></path>
+          </svg>
+          <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+            <span class="font-semibold">Click to upload</span> or drag and drop
+          </p>
+          <p class="text-xs text-gray-500 dark:text-gray-400">
+            PNG, SVG, MP4, JPG or GIF
+          </p>
+        </div>
+        <input id="dropzone-file" type="file" class="hidden" />
+      </label>
+    </div>
+  </div>
   <div class="contentsection">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 class="text-6xl">Features</h1>
     <!--sits-->
     <div class="contentdiv">
       <div class="contentsep">
-        <h1>
-          Safe
-        </h1>
+        <h1>Safe</h1>
         <h2>
-         Esta pagina web es tan segura que hicimos que la trolonga de justPrintF haga una nueva amistad con el fracasado de mackend<br /><br />
+          This website does not collect videos, images or personal data that are
+          entered, it also has anti-data theft security.<br /><br />
         </h2>
       </div>
-     <img src="public/image.png"></Image>
+      <img src="images/image.png" class="shadow-2xl"/>
     </div>
   </div>
+  <div class="contentdiv">
+    <img src="images/asdasd.png" class="drop-shadow-xl"/>
+    <div class="contentsep">
+      <h1>Fast</h1>
+      <h2>
+        This website can upload a 4GB video in less than 5 minutes! Their servers are so powerful that...<br /><br />
+      </h2>
+    </div>
+  </div>
+</div>
 </Layout>

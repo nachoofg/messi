@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+html {
+  font-family: system-ui, sans-serif;
+  background: #F2ECEC;
+  background-size: 224px;
+}
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.contentsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.contentimg {
+  max-height: calc(100% - 60%);
+  max-width: calc(100% - 60%);
+  border-radius: 10px;
+  margin: 0 2vw;
+}
+
+.contentsep {
+  margin: 0 2vw;
+  min-width: 350px;
+  max-width: 760px;
+}
+
+.contentsep h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+body {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.contentsep h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.tarjeta {
+  min-width: 350px;
+  max-width: 760px;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  flex-direction: column;
+  justify-content: center;
+}
+.dropzone {
+  align-items: center;
+  border: 0.06rem solid #c8c8d5;
+  border-radius: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1.875rem;
+  gap: 1.875rem;
+  height: 20rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+.dropzone-cta {
+  border-radius: 0.625rem;
+}

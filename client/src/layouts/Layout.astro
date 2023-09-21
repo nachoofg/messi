@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,100 +8,16 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="style/global.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot/>
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: aliceblue;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-	.section {
-    padding: 3rem 1.5rem;
-}
-
-.contentsection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contentdiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 0;
-}
-
-.contentimg {
-    max-height: calc(100% - 60%);
-    max-width: calc(100% - 60%);
-    border-radius: 10px;
-    margin: 0 2vw;
-}
-
-.contentsep {
-    margin: 0 2vw;
-    min-width: 350px;
-    max-width: 760px;
-}
-
-.contentsep h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 15px 0;
-}
-
-body {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-}
-
-.contentsep h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-.tarjeta {
-    min-width: 350px;
-    max-width: 760px;
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    flex-direction: column;
-    justify-content: center;
-}
-</style>
